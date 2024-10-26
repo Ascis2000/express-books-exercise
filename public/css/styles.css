@@ -1,0 +1,184 @@
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: flex-start;
+
+    font-size:0.8em;
+    color: #666666; 
+    font-family: Arial, sans-serif;
+
+    background-color:#d1e0eb;
+}
+
+main {
+    width: 95%;
+    padding: 10px;
+    margin: 10px auto;
+
+    border-radius: 10px;
+    background-color: #f7f7f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+main.libros {
+    width: 95%;
+    padding: 20px;
+    margin: 20px auto;
+
+    border-radius: 10px;
+    background-color: #f7f7f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+    margin: 10px 0 0 0;
+    font-size:1.3em;
+    text-align: center;
+}
+
+main.libros h3 {
+    padding:5px 5px 5px 10px;
+    margin: 0px 0 0 0;
+    font-size:1.3em;
+    text-align: left;
+    border-radius: 5px 0px 0px 5px;
+
+    background: linear-gradient(to right, #add8e6, #F7F7F9); /* Azul tenue a gris */
+}
+
+/* ******************************* */
+
+.boxBooks {
+    gap: 10px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap; 
+}
+
+.box {
+    padding: 20px;
+    flex: 1 1 200px;
+    color: #888888;
+    text-align: center;
+    word-break: break-word;
+
+    border-radius: 10px;
+    background-color: #ffffff;
+    border: 1px solid rgb(133, 159, 168);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.box .title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.box .author {
+    font-size: 16px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.box .details {
+    font-size: 14px;
+    color: #555;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.box .details a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.box .details a:hover {
+    text-decoration: underline;
+}
+
+/* ******************************* */
+
+.fondo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/noeslapaginaquestasbuscando.png'); /* Ruta de la imagen */
+    background-size: cover; /* La imagen cubre todo el fondo */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenido {
+    background-color: rgba(0, 0, 0, 0.4); /* Fondo oscuro semi-transparente para el contenido */
+    color: white; /* Color del texto */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 80%; /* Limita el ancho máximo del contenido */
+}
+
+.msg_error{
+    color: red;
+    font-size:0.8em;
+}
+
+/* ******************************* */
+
+/* Estilos para la tabla */
+table.libros {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+table.libros th, td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+    word-break: break-word;
+}
+
+table.libros th {
+    background-color: #66879a;
+    color: #dce2e8;
+    font-weight: bold;
+}
+table.libros th:first-child {
+    width:35%;
+}
+table.libros td:first-child {
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+tr:hover {
+    background-color: #e3f2fd;
+}
+
+/* Estilos para los enlaces */
+a {
+    color: #0277bd;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: #0a4069;
+}

@@ -1,0 +1,171 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libros 2024</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+    <main class="libros">
+        <h3>{{mensaje}}</h3>
+
+        <table class="libros">
+            <thead>
+                <tr>
+                    <th>Endpoint</th>
+                    <th>JSON</th>
+                    <th>HTML</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>ruta /</td>
+                    <td>
+                        <a href="http://localhost:3000/">localhost:3000/</a>
+                    </td>
+                    <td>---</td>
+                </tr>
+                <tr>
+                    <td>1. /all</td>
+                    <td>
+                        <a href="http://localhost:3000/all">localhost:3000/all</a>
+                    </td>
+                    <td>
+                        <a href="http://localhost:3000/all?format=html">
+                            Ver HTML
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2. /first</td>
+                    <td>
+                        <a href="http://localhost:3000/first">localhost:3000/first</a>
+                    </td>
+                    <td>
+                        <a href="http://localhost:3000/first?format=html">
+                            Ver HTML
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>3. /last</td>
+                    <td>
+                        <a href="http://localhost:3000/last">localhost:3000/last</a>
+                    </td>
+                    <td>
+                        <a href="http://localhost:3000/last?format=html">
+                            Ver HTML
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>4. /middle</td>
+                    <td>
+                        <a href="http://localhost:3000/middle">
+                            localhost:3000/middle
+                        </a>
+                    </td>
+                    <td>
+                        <a href="http://localhost:3000/middle?format=html">
+                            Ver HTML
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>5. /author/:authorName</td>
+                    <td>
+                        <a href="http://localhost:3000/author/dante-alighieri">
+                            localhost:3000/author/dante-alighieri
+                        </a>
+                    </td>
+                    <td>---</td>
+                </tr>
+                <tr>
+                    <td>6. /country/:authorName</td>
+                    <td>
+                        <a href="http://localhost:3000/country/charles-dickens">
+                            localhost:3000/country/charles-dickens
+                        </a>
+                    </td>
+                    <td>---</td>
+                </tr>
+                <tr>
+                    <td>7. /year&pages/:authorName</td>
+                    <td>
+                        <a href="http://localhost:3000/year&pages/cervantes">
+                            localhost:3000/year&pages/cervantes
+                        </a>
+                    </td>
+                    <td>---</td>
+                </tr>
+                <tr>
+                    <td>8. /country/count/:countryName</td>
+                    <td>
+                        <a href="http://localhost:3000/country/count/Spain">
+                            localhost:3000/country/count/Spain
+                        </a>
+                    </td>
+                    <td>---</td>
+                </tr>
+                <tr>
+                    <td>9. /country/at-least/:countryName</td>
+                    <td>
+                        <a href="http://localhost:3000/country/at-least/Denmark">
+                            localhost:3000/country/at-least/Denmark
+                        </a>
+                    </td>
+                    <td>---</td>
+                </tr>
+                <tr>
+                    <td>10. /pages/all-greater/:pageCount</td>
+                    <td>
+                        <a href="http://localhost:3000/pages/all-greater/200">
+                            localhost:3000/pages/all-greater/200
+                        </a>
+                    </td>
+                    <td>---</td>
+                </tr>
+                <tr>
+                    <td>/book/1</td>
+                    <td>
+                        <a href="http://localhost:3000/book/1">
+                            localhost:3000/book/1
+                        </a>
+                    </td>
+                    <td>
+                        <a href="http://localhost:3000/book/1?format=html">
+                            Ver HTML
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>/books?page=1</td>
+                    <td>
+                        <a href="http://localhost:3000/books?page=1">
+                            localhost:3000/books?page=1
+                        </a>
+                        (10 libros por página)
+                    </td>
+                    <td>
+                        <a href="http://localhost:3000/books?page=1&format=html">
+                            Ver HTML
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>/ruta_no_valida</td>
+                    <td>
+                        <a href="http://localhost:3000/ruta_no_valida">
+                            localhost:3000/ruta_no_valida
+                        </a>
+                    </td>
+                    <td>---</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+</body>
+</html>
